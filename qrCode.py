@@ -11,7 +11,6 @@ from PyQt5.QtWidgets import (
 )
 import qrcode
 from PyQt5.QtGui import QIcon, QTextDocument, QPixmap
-from PyQt5.QtCore import Qt
 import os
 
 
