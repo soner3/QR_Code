@@ -111,6 +111,8 @@ class QRCode(QWidget):
                 self.text_field.setStyleSheet("color: red; font-size: 25pt;")
 
     def generate(self):
+        if not os.path.exists("QR_Codes"):
+            os.makedirs("QR_Codes")
         if (self.link_feld.text() == "") or (self.link_feld.text() == "Das Linkfeld ist leer"):
             self.link_feld.setText("Das Linkfeld ist leer")
 
